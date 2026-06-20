@@ -1,0 +1,15 @@
+{
+  "name": "anyrouter-cli-proxy-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/anyrouter-worker.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "probe": "node probe-ai.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

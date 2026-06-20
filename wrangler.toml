@@ -1,0 +1,19 @@
+name = "anyrouter-gpt55-proxy"
+main = "src/anyrouter-worker.js"
+compatibility_date = "2025-11-21"
+
+# Secrets recommended for production:
+#   wrangler secret put ANYROUTER_API_KEY
+#   wrangler secret put WORKER_API_KEY
+#
+# ANYROUTER_API_KEY:
+#   Upstream key used when the Worker calls anyrouter.top.
+# WORKER_API_KEY:
+#   Optional client-facing key used by CLIProxyAPI/OpenAI SDK/Claude Code.
+
+[vars]
+ANYROUTER_BASE_URL = "https://anyrouter.top"
+DEFAULT_MODEL = "gpt-5.5"
+DEFAULT_MAX_TOKENS = "4096"
+PREFER_ANTHROPIC_FOR_CLAUDE = "0"
+MODEL_ALLOWLIST = "gpt-5.5"
